@@ -12,6 +12,10 @@ var server=http.createServer((req,res)=>{
   var parsedUrl = url.parse(req.url,true)
   var pathname = parsedUrl.pathname
 
+
+  console.log('Recebi o pedido: ' + req.url)
+  console.log('Método: ' + req.method)
+
   if(req.method == 'GET'){
     if(pathname == '/'){
 
@@ -46,7 +50,7 @@ var server=http.createServer((req,res)=>{
     }else if(pathname == '/w3.css'){
 
       res.writeHead(200, {'Content-type' : 'text/css'})
-      fs.readFile('stylesheets/w3.css',(erro,dados)=>{
+      fs.readFile('stylesheet/w3.css',(erro,dados)=>{
         if(erro){res.write(pug.renderFile('views/erro.pug',{e : erro}))}
         else{res.write(dados)}
         res.end()
