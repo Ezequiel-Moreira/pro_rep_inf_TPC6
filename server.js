@@ -14,7 +14,9 @@ var server=http.createServer((req,res)=>{
 
   if(req.method == 'GET'){
     if(pathname == '/'){
-
+      res.writeHead(200, {'Content-type' : 'text/html;charset=utf-8'})
+      res.write(pug.renderFile('principal.pug'))
+      res.end()
     }else if(pathname == '/registo'){
 
     }else if(pathname == '/lista'){

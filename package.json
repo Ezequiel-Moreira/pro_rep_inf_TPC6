@@ -1,13 +1,17 @@
 {
-  "name": "aula6",
+  "name": "servidor",
   "version": "1.0.0",
-  "description": "formulários",
+  "description": "Resolução do TPC6 da disciplina de Processamento e Representação de dados",
   "main": "server.js",
   "scripts": {
-    "start": "node server3.js",
-    "dev": "nodemon server3.js"
+    "test": "nodemon server.js",
+    "start": "node server.js"
   },
-  "author": "Ezequiel Moreira",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezequiel-Moreira/pro_rep_inf_TPC6.git"
+  },
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "jsonfile": "^5.0.0",
@@ -15,5 +19,8 @@
     "pug": "^2.0.3",
     "querystring": "^0.2.0"
   },
-  "devDependencies": {}
+  "bugs": {
+    "url": "https://github.com/Ezequiel-Moreira/pro_rep_inf_TPC6/issues"
+  },
+  "homepage": "https://github.com/Ezequiel-Moreira/pro_rep_inf_TPC6#readme"
 }
