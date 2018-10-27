@@ -69,7 +69,6 @@ var server=http.createServer((req,res)=>{
         jsonfile.readFile(bd,(erro,teses)=>{
           if(!erro){
             teses.push(resultado)
-            console.dir(teses)
             jsonfile.writeFile(bd,teses,(erro2)=>{
               if(!erro2){console.log('registo guardado com sucesso!')}
               else{console.log('Erro:' + erro2)}
