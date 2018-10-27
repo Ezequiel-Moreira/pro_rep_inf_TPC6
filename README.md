@@ -1,1 +1,3 @@
-# pro_rep_inf_TPC6
+# TPC6
+
+Resolução do TPC6

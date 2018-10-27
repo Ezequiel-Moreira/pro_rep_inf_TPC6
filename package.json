@@ -1,0 +1,19 @@
+{
+  "name": "aula6",
+  "version": "1.0.0",
+  "description": "formulários",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server3.js",
+    "dev": "nodemon server3.js"
+  },
+  "author": "Ezequiel Moreira",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^5.0.0",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {}
+}
